@@ -15,6 +15,8 @@
         <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="5"/>
+        <value type="int" value="11"/>
+        <value type="int" value="10"/>
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="4"/>
@@ -63,7 +65,51 @@
     <property name="plugin-9" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-1" type="string" value="whiskermenu">
+      <property name="view-mode" type="int" value="1"/>
+      <property name="recent" type="array">
+        <value type="string" value="google-chrome.desktop"/>
+      </property>
+    </property>
     <property name="plugin-4" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="known-players" type="string" value="Chrome"/>
+    </property>
+    <property name="plugin-11" type="string" value="weather">
+      <property name="location" type="empty">
+        <property name="name" type="string" value="Krefeld, Nordrhein-Westfalen"/>
+        <property name="latitude" type="string" value="51.333120"/>
+        <property name="longitude" type="string" value="6.562334"/>
+      </property>
+      <property name="msl" type="int" value="44"/>
+      <property name="timezone" type="string" value="Europe/Berlin"/>
+      <property name="offset" type="string" value="+02:00"/>
+      <property name="cache-max-age" type="int" value="172800"/>
+      <property name="power-saving" type="bool" value="true"/>
+      <property name="units" type="empty">
+        <property name="temperature" type="int" value="0"/>
+        <property name="pressure" type="int" value="0"/>
+        <property name="windspeed" type="int" value="0"/>
+        <property name="precipitation" type="int" value="0"/>
+        <property name="altitude" type="int" value="0"/>
+        <property name="apparent-temperature" type="int" value="2"/>
+      </property>
+      <property name="round" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="tooltip-style" type="int" value="0"/>
+      <property name="forecast" type="empty">
+        <property name="layout" type="int" value="1"/>
+        <property name="days" type="int" value="5"/>
+      </property>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid-dark"/>
+      <property name="scrollbox" type="empty">
+        <property name="show" type="bool" value="true"/>
+        <property name="animate" type="bool" value="true"/>
+        <property name="lines" type="int" value="1"/>
+        <property name="color" type="string" value="rgba(0,0,0,0)"/>
+        <property name="use-color" type="bool" value="false"/>
+      </property>
+    </property>
   </property>
 </channel>

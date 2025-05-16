@@ -6,7 +6,7 @@
     <property name="screen0" type="empty">
       <property name="monitoreDP" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/home/devin/Pictures/Wallpaper/indian-bike.jpg"/>
+          <property name="last-image" type="string" value="/home/devin/Pictures/Wallpaper/spencer-davis-ilQmlVIMN4c-unsplash.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
