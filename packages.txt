@@ -26,7 +26,6 @@ starship
 okular
 xclip
 wine
-nautilus
 python-pip
 python-pipx
 openssh
@@ -44,3 +43,5 @@ jdk-openjdk
 cargo
 go
 xfce4-whiskermenu-plugin
+xfce4-screensaver
+xfce4-screenshooter
