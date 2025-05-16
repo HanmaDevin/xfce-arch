@@ -28,6 +28,7 @@ xclip
 wine
 python-pip
 python-pipx
+pavucontrol
 openssh
 pam-u2f
 ttf-font-awesome
@@ -43,6 +44,8 @@ jdk-openjdk
 cargo
 go
 xfce4-whiskermenu-plugin
+xfce4-pulseaudio-plugin
+xfce4-weather-plugin
 xfce4-screensaver
 xfce4-screenshooter
 blueman
