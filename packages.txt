@@ -45,6 +45,7 @@ cargo
 go
 xfce4-whiskermenu-plugin
 xfce4-pulseaudio-plugin
+xfce4-clipman-plugin
 xfce4-weather-plugin
 xfce4-screensaver
 xfce4-screenshooter
