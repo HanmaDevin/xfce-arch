@@ -61,6 +61,11 @@
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-layout" type="uint" value="1"/>
       <property name="digital-date-format" type="string" value="%d/%m/%Y"/>
+      <property name="mode" type="uint" value="4"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+      <property name="show-inactive" type="bool" value="false"/>
+      <property name="flash-separators" type="bool" value="true"/>
+      <property name="show-seconds" type="bool" value="false"/>
     </property>
     <property name="plugin-9" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -96,19 +101,22 @@
         <property name="apparent-temperature" type="int" value="2"/>
       </property>
       <property name="round" type="bool" value="false"/>
-      <property name="single-row" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="false"/>
       <property name="tooltip-style" type="int" value="0"/>
       <property name="forecast" type="empty">
         <property name="layout" type="int" value="1"/>
         <property name="days" type="int" value="5"/>
       </property>
-      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid-dark"/>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
       <property name="scrollbox" type="empty">
         <property name="show" type="bool" value="true"/>
         <property name="animate" type="bool" value="true"/>
         <property name="lines" type="int" value="1"/>
         <property name="color" type="string" value="rgba(0,0,0,0)"/>
         <property name="use-color" type="bool" value="false"/>
+      </property>
+      <property name="labels" type="empty">
+        <property name="label0" type="int" value="3"/>
       </property>
     </property>
   </property>
