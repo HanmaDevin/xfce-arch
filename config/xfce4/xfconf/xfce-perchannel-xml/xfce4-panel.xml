@@ -77,6 +77,20 @@
       <property name="recent" type="array">
         <value type="string" value="google-chrome.desktop"/>
       </property>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="position-profile-alternate" type="bool" value="true"/>
+      <property name="position-categories-alternate" type="bool" value="false"/>
+      <property name="position-categories-horizontal" type="bool" value="true"/>
+      <property name="favorites" type="array">
+        <value type="string" value="code.desktop"/>
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="discord.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="btop.desktop"/>
+        <value type="string" value="kitty.desktop"/>
+        <value type="string" value="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop"/>
+      </property>
+      <property name="button-icon" type="string" value="archlinux-logo"/>
     </property>
     <property name="plugin-4" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="pulseaudio">
