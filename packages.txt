@@ -41,6 +41,7 @@ calc
 gnome-keyring
 gdb
 jdk-openjdk
+rust
 cargo
 go
 xfce4-whiskermenu-plugin

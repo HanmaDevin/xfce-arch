@@ -46,7 +46,7 @@ copy_config() {
   if [[ -d "$HOME/.config" ]]; then 
     mv "$HOME/.config" "$HOME/.config.bak"
   fi
-  cp -r config/* "$HOME/.config"
+  cp -r "$repo/config/*" "$HOME/.config"
   cp -r "$repo/Wallpaper" "$HOME/Pictures/"
   cp "$repo/.zshrc" "$HOME/"
 
