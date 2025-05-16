@@ -45,3 +45,7 @@ go
 xfce4-whiskermenu-plugin
 xfce4-screensaver
 xfce4-screenshooter
+blueman
+bluez
+bluez-utils
+bluez-obex
