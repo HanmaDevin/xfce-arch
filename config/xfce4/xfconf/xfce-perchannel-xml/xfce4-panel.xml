@@ -20,7 +20,6 @@
         <value type="int" value="4"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
-        <value type="int" value="10"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="enter-opacity" type="uint" value="99"/>
@@ -32,7 +31,7 @@
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
-      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
       <property name="include-all-workspaces" type="bool" value="true"/>
       <property name="flat-buttons" type="bool" value="false"/>
       <property name="show-tooltips" type="bool" value="false"/>
@@ -44,6 +43,9 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (56%)"/>
+        <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (58%)"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (59%)"/>
       </property>
       <property name="known-items" type="array">
@@ -61,7 +63,6 @@
     <property name="plugin-9" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-10" type="string" value="actions"/>
     <property name="plugin-1" type="string" value="whiskermenu"/>
     <property name="plugin-4" type="string" value="power-manager-plugin"/>
   </property>
