@@ -45,6 +45,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="clipman"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (56%)"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (58%)"/>
@@ -66,8 +67,8 @@
       <property name="show-inactive" type="bool" value="false"/>
       <property name="flash-separators" type="bool" value="true"/>
       <property name="show-seconds" type="bool" value="false"/>
-      <property name="digital-date-font" type="string" value="Sans 10"/>
-      <property name="digital-time-font" type="string" value="Sans 14"/>
+      <property name="digital-date-font" type="string" value="JetBrainsMonoNL Nerd Font 12"/>
+      <property name="digital-time-font" type="string" value="JetBrainsMonoNL Nerd Font 12"/>
     </property>
     <property name="plugin-9" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
