@@ -18,16 +18,15 @@
         <value type="int" value="11"/>
         <value type="int" value="10"/>
         <value type="int" value="6"/>
-        <value type="int" value="7"/>
         <value type="int" value="4"/>
+        <value type="int" value="7"/>
         <value type="int" value="8"/>
-        <value type="int" value="9"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="enter-opacity" type="uint" value="99"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="border-width" type="uint" value="0"/>
-      <property name="enable-struts" type="bool" value="true"/>
+      <property name="enable-struts" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -69,9 +68,6 @@
       <property name="show-seconds" type="bool" value="false"/>
       <property name="digital-date-font" type="string" value="JetBrainsMonoNL Nerd Font 12"/>
       <property name="digital-time-font" type="string" value="JetBrainsMonoNL Nerd Font 12"/>
-    </property>
-    <property name="plugin-9" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu">
       <property name="view-mode" type="int" value="1"/>
