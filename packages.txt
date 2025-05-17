@@ -54,3 +54,4 @@ blueman
 bluez
 bluez-utils
 bluez-obex
+inter-font
