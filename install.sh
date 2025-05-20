@@ -7,14 +7,14 @@
 #                                                  /_/           
 clear
 
-download_folder="$HOME/.xfce4"
+location="$HOME/xfce-arch"
 
 installPackages() {
-    sudo pacman --noconfirm -S $(cat "$download_folder/packages.txt")
+    sudo pacman --noconfirm -S $(cat "$location/packages.txt")
 }
 
 installAurPackages() {
-    sudo yay --noconfirm -S $(cat "$download_folder/aur_packages.txt")
+    yay --noconfirm -S $(cat "$location/aur_packages.txt")
 }
 
 installYay() {
@@ -22,7 +22,7 @@ installYay() {
     SCRIPT=$(realpath "$0")
     temp_path=$(dirname "$SCRIPT")
     git clone https://aur.archlinux.org/yay.git $HOME/.yay
-    cd $download_folder/yay
+    cd $HOME/$repo/yay
     makepkg -si
     cd $temp_path
     echo ":: yay has been installed successfully."
@@ -46,14 +46,14 @@ copy_config() {
   if [[ -d "$HOME/.config" ]]; then 
     mv "$HOME/.config" "$HOME/.config.bak"
   fi
-  cp -r "$download_folder/config/*" "$HOME/.config"
-  cp -r "$download_folder/Wallpaper" "$HOME/Pictures/"
-  cp "$download_folder/.zshrc" "$HOME/"
+  cp -r "$location/.config/" "$HOME/.config"
+  cp -r "$location/Wallpaper" "$HOME/Pictures/"
+  cp "$location/.zshrc" "$HOME/"
 
-  sudo cp "$download_folder/etc/pacman.conf" "/etc/"
+  sudo cp "$location/etc/pacman.conf" "/etc/"
 
-  sudo cp -r "$download_folder/icons/*" "/usr/share/icons"
-  sudo cp -r "$download_folder/themes/*" "/usr/share/themes"
+  sudo cp -r "$location/icons/" "/usr/share/"
+  sudo cp -r "$location/themes/" "/usr/share/"
 }
 
 configure_git() {
@@ -100,8 +100,6 @@ echo -e "${NONE}"
 
 sudo pacman -Syu
 
-git clone "https://github.com/HanmaDevin/xfce-arch.git" "$download_folder"
-
 installPackages
 
 installYay
@@ -117,10 +115,10 @@ chsh -s /bin/zsh
 
 systemctl enable bluetooth.service
 systemctl start bluetooth.service
-systemctl ebnable NetworkManager.service
+systemctl enable NetworkManager.service
 systemctl start NetworkManager.service
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl -o- https://fnm.vercel.app/install | bash
 
 echo -e "${MAGENTA}"
 cat <<"EOF"
