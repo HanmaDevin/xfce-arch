@@ -47,7 +47,6 @@
       <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
@@ -59,6 +58,8 @@
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="kitty -e btop"/>
       <property name="&lt;Super&gt;i" type="string" value="xfce4-settings-manager"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="kitty"/>
+      <property name="&lt;Super&gt;Return" type="string" value="kitty"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
