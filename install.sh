@@ -7,14 +7,14 @@
 #                                                  /_/           
 clear
 
-repo="$HOME/.xfce4"
+download_folder="$HOME/.xfce4"
 
 installPackages() {
-    sudo pacman --noconfirm -S $(cat "$repo/packages.txt")
+    sudo pacman --noconfirm -S $(cat "$download_folder/packages.txt")
 }
 
 installAurPackages() {
-    sudo yay --noconfirm -S $(cat "$repo/aur_packages.txt")
+    sudo yay --noconfirm -S $(cat "$download_folder/aur_packages.txt")
 }
 
 installYay() {
@@ -22,7 +22,7 @@ installYay() {
     SCRIPT=$(realpath "$0")
     temp_path=$(dirname "$SCRIPT")
     git clone https://aur.archlinux.org/yay.git $HOME/.yay
-    cd $repo/yay
+    cd $download_folder/yay
     makepkg -si
     cd $temp_path
     echo ":: yay has been installed successfully."
@@ -46,12 +46,14 @@ copy_config() {
   if [[ -d "$HOME/.config" ]]; then 
     mv "$HOME/.config" "$HOME/.config.bak"
   fi
-  cp -r "$repo/config/*" "$HOME/.config"
-  cp -r "$repo/Wallpaper" "$HOME/Pictures/"
-  cp "$repo/.zshrc" "$HOME/"
+  cp -r "$download_folder/config/*" "$HOME/.config"
+  cp -r "$download_folder/Wallpaper" "$HOME/Pictures/"
+  cp "$download_folder/.zshrc" "$HOME/"
 
- sudo cp -r "$repo/icons/*" "/usr/share/icons"
- sudo cp -r "$repo/themes/*" "/usr/share/themes"
+  sudo cp "$download_folder/etc/pacman.conf" "/etc/"
+
+  sudo cp -r "$download_folder/icons/*" "/usr/share/icons"
+  sudo cp -r "$download_folder/themes/*" "/usr/share/themes"
 }
 
 configure_git() {
@@ -98,7 +100,7 @@ echo -e "${NONE}"
 
 sudo pacman -Syu
 
-git clone "https://github.com/HanmaDevin/xfce-arch.git" "$repo"
+git clone "https://github.com/HanmaDevin/xfce-arch.git" "$download_folder"
 
 installPackages
 
