@@ -43,6 +43,10 @@ copy_config() {
     mv "$HOME/.zshrc" "$HOME/.zshrc.bak"
   fi
 
+  cp -r "$location/home-config/.assets" "$HOME/"
+  cp "$location/home-config/.profile" "$HOME/"
+  cp "$location/home-config/.Xresources" "$HOME/"
+
   if [[ -d "$HOME/.config" ]]; then 
     mv "$HOME/.config" "$HOME/.config.bak"
   fi
@@ -51,9 +55,19 @@ copy_config() {
   cp "$location/.zshrc" "$HOME/"
 
   sudo cp "$location/etc/pacman.conf" "/etc/"
-
   sudo cp -r "$location/icons/" "/usr/share/"
-  sudo cp -r "$location/themes/" "/usr/share/"
+  sudo cp -r "$location/themes/" "/usr/share"
+}
+
+install_yazi_plugins() {
+  ya pack -a Rolv-Apneseth/starship
+  ya pack -a yazi-rs/plugins:git
+  ya pack -a yazi-rs/plugins:full-border
+  ya pack -a grappas/wl-clipboard
+  ya pack -a Reledia/glow
+  ya pack -a TD-Sky/sudo
+  ya pack -a Lil-Dank/lazygit
+  ya pack -a yazi-rs/plugins:jump-to-char
 }
 
 configure_git() {
@@ -110,6 +124,7 @@ gum spin --spinner dot --title "Starting setup now..." -- sleep 2
 copy_config
 configure_git
 config_ufw
+install_yazi_plugins
 
 chsh -s /bin/zsh 
 

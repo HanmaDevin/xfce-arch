@@ -1,4 +1,5 @@
 gum
+yazi
 zip
 libreoffice
 fastfetch
@@ -57,3 +58,6 @@ bluez
 bluez-utils
 bluez-obex
 inter-font
+kvantum-qt5
+lightdm-gtk-greeter-settings
+xfce4-docklike-plugin
