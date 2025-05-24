@@ -99,7 +99,7 @@
     </property>
     <property name="plugin-10" type="string" value="whiskermenu">
       <property name="button-icon" type="string" value="archlinux-logo"/>
-      <property name="view-mode" type="int" value="0"/>
+      <property name="view-mode" type="int" value="1"/>
       <property name="launcher-icon-size" type="int" value="2"/>
     </property>
   </property>
