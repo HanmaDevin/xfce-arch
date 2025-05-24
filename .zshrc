@@ -100,7 +100,7 @@ alias get="sudo pacman -S --noconfirm"
 alias remove="sudo pacman -Rns --noconfirm"
 alias update="sudo pacman -Syu"
 
-alias editzsh="code ~/.zshrc"
+alias editzsh="nvim ~/.zshrc"
 alias lg="lazygit"
 alias lazydocker="sudo lazydocker"
 
@@ -115,7 +115,7 @@ alias ..='z ..'
 alias startdocker="systemctl start docker"
 
 # you may also use the following one
-bindkey -s '^o' 'code $(fzf)\n'
+bindkey -s '^o' 'nvim $(fzf)\n'
 
 # python environments
 alias deac="deactivate"
@@ -156,3 +156,9 @@ export NVM_DIR="$HOME/.nvm"
 # Source the Lazyman .nvimsbind for nvims key binding
 # shellcheck source=.config/nvim-Lazyman/.nvimsbind
 [ -f ~/.config/nvim-Lazyman/.nvimsbind ] && source ~/.config/nvim-Lazyman/.nvimsbind
+# fnm
+FNM_PATH="/home/devin/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
