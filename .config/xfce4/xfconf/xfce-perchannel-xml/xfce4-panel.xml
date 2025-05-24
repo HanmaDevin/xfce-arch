@@ -19,7 +19,7 @@
         <value type="int" value="9"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
-        <value type="int" value="7"/>
+        <value type="int" value="12"/>
         <value type="int" value="8"/>
       </property>
     </property>
@@ -42,14 +42,13 @@
         <value type="string" value="blueman"/>
       </property>
     </property>
-    <property name="plugin-7" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-layout" type="uint" value="3"/>
       <property name="digital-time-font" type="string" value="Inter 12"/>
       <property name="digital-date-font" type="string" value="Inter 10"/>
       <property name="digital-date-format" type="string" value="%b %d, %Y"/>
+      <property name="digital-time-format" type="string" value=" %I:%M %p"/>
+      <property name="tooltip-format" type="string" value="%a, %b %d"/>
     </property>
     <property name="plugin-1" type="string" value="docklike"/>
     <property name="plugin-2" type="string" value="xkb">
@@ -58,6 +57,7 @@
     </property>
     <property name="plugin-4" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="known-players" type="string" value="Chrome"/>
     </property>
     <property name="plugin-9" type="string" value="weather">
       <property name="location" type="empty">
@@ -101,6 +101,14 @@
       <property name="button-icon" type="string" value="archlinux-logo"/>
       <property name="view-mode" type="int" value="1"/>
       <property name="launcher-icon-size" type="int" value="2"/>
+      <property name="favorites" type="array">
+        <value type="string" value="discord.desktop"/>
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="kitty.desktop"/>
+        <value type="string" value="nvim.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+      </property>
     </property>
+    <property name="plugin-12" type="string" value="power-manager-plugin"/>
   </property>
 </channel>
