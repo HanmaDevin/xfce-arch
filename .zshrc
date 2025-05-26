@@ -100,13 +100,15 @@ alias get="sudo pacman -S --noconfirm"
 alias remove="sudo pacman -Rns --noconfirm"
 alias update="sudo pacman -Syu"
 
+alias copy="xsel -i -b"
+alias paste="xsel -o -b"
+
 alias editzsh="nvim ~/.zshrc"
 alias lg="lazygit"
 alias lazydocker="sudo lazydocker"
 
 # visual
 alias open="xdg-open"
-alias cat='bat -p --color=always --theme="Dracula"'
 alias bat='bat -p --color=always --theme="Dracula"'
 alias q="exit"
 
