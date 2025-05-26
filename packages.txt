@@ -26,7 +26,7 @@ ripgrep
 fd
 starship
 okular
-xclip
+xsel
 wine
 python-pip
 python-pipx
