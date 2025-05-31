@@ -54,3 +54,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# TODO: fix TypeError: string indices must be integers, not str if base_url is incorrect
