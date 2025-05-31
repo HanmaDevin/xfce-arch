@@ -95,6 +95,9 @@ alias lt='eza --icons=auto --color=always --tree --level=3'
 alias cd="z"
 alias refresh="source ~/.zshrc"
 
+alias grep='grep --color="always"'
+alias find="fd"
+
 # pacman
 alias get="sudo pacman -S --noconfirm"
 alias remove="sudo pacman -Rns --noconfirm"
@@ -162,5 +165,12 @@ export NVM_DIR="$HOME/.nvm"
 FNM_PATH="/home/devin/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/devin/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/devin/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
