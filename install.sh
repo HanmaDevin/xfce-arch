@@ -51,6 +51,10 @@ copy_config() {
     mv "$HOME/.config" "$HOME/.config.bak"
   fi
   cp -r "$location/.config/" "$HOME/"
+
+  if [[ ! -d "$HOME/Pictures/" ]]; then 
+    mkdir -p "$HOME/Pictures/"
+  fi
   cp -r "$location/Wallpaper" "$HOME/Pictures/"
   cp "$location/.zshrc" "$HOME/"
 
