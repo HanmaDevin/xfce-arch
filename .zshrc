@@ -95,6 +95,9 @@ alias lt='eza --icons=auto --color=always --tree --level=3'
 alias cd="z"
 alias refresh="source ~/.zshrc"
 
+alias grep='grep --color="always"'
+alias find="fd"
+
 # pacman
 alias get="sudo pacman -S --noconfirm"
 alias remove="sudo pacman -Rns --noconfirm"
@@ -130,7 +133,8 @@ function createnv() {
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 
-export EDITOR=code
+export EDITOR=nvim
+source .env
 
 # History
 HISTSIZE=5000
@@ -162,5 +166,12 @@ export NVM_DIR="$HOME/.nvm"
 FNM_PATH="/home/devin/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/devin/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/devin/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi

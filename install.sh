@@ -18,13 +18,9 @@ installAurPackages() {
 }
 
 installYay() {
-    installPackages "base-devel"
-    SCRIPT=$(realpath "$0")
-    temp_path=$(dirname "$SCRIPT")
     git clone https://aur.archlinux.org/yay.git $HOME/.yay
-    cd $HOME/$repo/yay
+    cd $HOME/.yay
     makepkg -si
-    cd $temp_path
     echo ":: yay has been installed successfully."
 }
 
@@ -57,17 +53,6 @@ copy_config() {
   sudo cp "$location/etc/pacman.conf" "/etc/"
   sudo cp -r "$location/icons/" "/usr/share/"
   sudo cp -r "$location/themes/" "/usr/share"
-}
-
-install_yazi_plugins() {
-  ya pack -a Rolv-Apneseth/starship
-  ya pack -a yazi-rs/plugins:git
-  ya pack -a yazi-rs/plugins:full-border
-  ya pack -a grappas/wl-clipboard
-  ya pack -a Reledia/glow
-  ya pack -a TD-Sky/sudo
-  ya pack -a Lil-Dank/lazygit
-  ya pack -a yazi-rs/plugins:jump-to-char
 }
 
 configure_git() {
@@ -124,9 +109,6 @@ gum spin --spinner dot --title "Starting setup now..." -- sleep 2
 copy_config
 configure_git
 config_ufw
-install_yazi_plugins
-
-chsh -s /bin/zsh 
 
 systemctl enable bluetooth.service
 systemctl start bluetooth.service
