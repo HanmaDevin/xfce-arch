@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Everblush"/>
-    <property name="IconThemeName" type="string" value="Nordzy-cyan-dark-MOD"/>
+    <property name="ThemeName" type="string" value="Qogir-Dark"/>
+    <property name="IconThemeName" type="string" value="Tela-dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -23,15 +23,15 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="string" value="Inter 10"/>
-    <property name="MonospaceFontName" type="string" value="JetBrainsMonoNL Nerd Font 10"/>
+    <property name="FontName" type="string" value="Inter 12"/>
+    <property name="MonospaceFontName" type="string" value="JetBrainsMono Nerd Font 12"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="MenuImages" type="empty"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="We10XOS-cursors"/>
-    <property name="CursorThemeSize" type="int" value="28"/>
+    <property name="CursorThemeName" type="string" value="Qogir-cursors"/>
+    <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="string" value="icon,menu:minimize,maximize,close"/>
     <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>
