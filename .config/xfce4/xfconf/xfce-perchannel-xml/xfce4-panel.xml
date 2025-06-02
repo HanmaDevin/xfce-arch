@@ -10,10 +10,14 @@
       <property name="length" type="uint" value="100"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="10"/>
-        <value type="int" value="1"/>
+        <value type="int" value="16"/>
+        <value type="int" value="9"/>
+        <value type="int" value="21"/>
+        <value type="int" value="22"/>
+        <value type="int" value="7"/>
+        <value type="int" value="5"/>
         <value type="int" value="3"/>
         <value type="int" value="2"/>
-        <value type="int" value="16"/>
         <value type="int" value="13"/>
         <value type="int" value="17"/>
         <value type="int" value="19"/>
@@ -35,7 +39,6 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="docklike"/>
     <property name="plugin-10" type="string" value="whiskermenu">
       <property name="button-icon" type="string" value="archlinux-logo"/>
       <property name="favorites" type="array">
@@ -119,7 +122,7 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-16" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-17" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -137,6 +140,31 @@
     </property>
     <property name="plugin-20" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17488357434.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17488357041.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-21" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17488357182.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-22" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17488357313.desktop"/>
+      </property>
     </property>
   </property>
 </channel>

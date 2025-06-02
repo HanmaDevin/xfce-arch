@@ -9,7 +9,7 @@
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-timer" type="uint" value="15"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
-          <property name="last-image" type="string" value="/home/devin/Pictures/Wallpaper/rodrigo-soares-c6SciRp2kaQ-unsplash.jpg"/>
+          <property name="last-image" type="string" value="/home/devin/Pictures/Wallpaper/annie-spratt-dSZQC7vVf5M-unsplash.jpg"/>
         </property>
       </property>
     </property>
