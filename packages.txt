@@ -61,3 +61,4 @@ inter-font
 lightdm-gtk-greeter-settings
 xfce4-docklike-plugin
 mugshot
+pacman-contrib
