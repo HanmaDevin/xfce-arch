@@ -39,23 +39,39 @@ icons = {
 }
 
 
-def get_icon(code):
+def check_internet_conn() -> bool:
+    try:
+        r = requests.get("https://google.com")
+        code = r.status_code
+        if code == 200:
+            return True
+        else:
+            return False
+    except requests.exceptions.RequestException as error:
+        print("No Internet!")
+        exit(-1)
+
+
+def get_icon(code: int):
     return icons[code]
 
 
-def get_temperature(city):
-    query = base_url + "?q=%s&units=metric&APPID=%s" % (city, api_key)
-    try:
-        response = requests.get(query)
-        # print("[%s] %s" % (response.status_code, response.url))
-        if response.status_code != 200:
-            response = "N/A"
-            return response
-        else:
-            weather_data = response.json()
-            return weather_data
-    except requests.exceptions.RequestException as error:
-        print(error)
+def get_temperature(city: str):
+    if check_internet_conn():
+        query = base_url + "?q=%s&units=metric&APPID=%s" % (city, api_key)
+        try:
+            response = requests.get(query)
+            # print("[%s] %s" % (response.status_code, response.url))
+            if response.status_code != 200:
+                response = "N/A"
+                return response
+            else:
+                weather_data = response.json()
+                return weather_data
+        except requests.exceptions.RequestException as error:
+            print(error)
+    else:
+        print("No Internet!")
 
 
 def main():

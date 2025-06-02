@@ -73,6 +73,8 @@
         <value type="string" value="blueman"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="requesting a wi-fi network address for “wlan-430650”…"/>
+        <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (61%)"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (84%)"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (87%)"/>
         <value type="string" value="wi-fi network connection “wlan-430650” active: wlan-430650 (89%)"/>
