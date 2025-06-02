@@ -34,8 +34,14 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="34"/>
-      <property name="background-style" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="1"/>
       <property name="background-image" type="string" value="file:///home/devin/Pictures/annie-spratt-dSZQC7vVf5M-unsplash.jpg"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.11764705882352941"/>
+        <value type="double" value="0.11764705882352941"/>
+        <value type="double" value="0.1803921568627451"/>
+        <value type="double" value="1"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -91,7 +97,7 @@
       <property name="digital-layout" type="uint" value="3"/>
       <property name="digital-time-font" type="string" value="Inter 12"/>
       <property name="digital-time-format" type="string" value=" %I:%M %p"/>
-      <property name="tooltip-format" type="string" value="%a, %b %d"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
     </property>
     <property name="plugin-11" type="string" value="genmon">
       <property name="command" type="string" value="/home/devin/.config/xfce4/scripts/battery-panel.sh"/>
