@@ -62,3 +62,7 @@ lightdm-gtk-greeter-settings
 xfce4-docklike-plugin
 mugshot
 pacman-contrib
+libimobiledevice
+usbmuxd
+gvfs-gphoto2
+ifuse
