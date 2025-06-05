@@ -168,10 +168,3 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
-
-# fnm
-FNM_PATH="/home/devin/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/devin/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
