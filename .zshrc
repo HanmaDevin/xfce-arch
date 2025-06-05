@@ -134,7 +134,7 @@ function createnv() {
 alias mkdir='mkdir -p'
 
 export EDITOR=nvim
-source .env
+source "$HOME/.env"
 
 # History
 HISTSIZE=5000
